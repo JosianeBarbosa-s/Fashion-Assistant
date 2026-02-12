@@ -1,17 +1,26 @@
+
 # Fashion Assistant
 
+Aplicação web que sugere looks personalizados com base na ocasião, temperatura, local, tipo de corpo e estilo de moda, com foco em experiência do usuário e lógica de programação em JavaScript.
+
+## Sobre o projeto
+
+O Fashion Assistant foi desenvolvido como um projeto de front-end para praticar:
+- Lógica condicional
+- Manipulação do DOM
+- Organização de código
+- Persistência de dados no navegador
+
+A aplicação permite que o usuário escolha suas preferências e receba sugestões de looks, além de manter um histórico dos últimos looks sugeridos.
+
+## Tecnologias utilizadas
 Aplicação web desenvolvida em HTML, CSS e JavaScript que sugere looks personalizados com base em preferências do usuário.
 
-<<<<<<< HEAD
 Projeto criado com foco em aprendizado em front-end, lógica de programação, organização de código e experiência do usuário.
-=======
-## Sobre o projeto
->>>>>>> 491bb89f32feee3f748be915a9a271b21024d02b
 
 ---
 
 ## Objetivo do projeto
-
 
 - Praticar desenvolvimento front-end
 - Trabalhar manipulação do DOM
@@ -42,18 +51,10 @@ Projeto criado com foco em aprendizado em front-end, lógica de programação, o
 ---
 
 ## Tecnologias
-=======
-## Tecnologias utilizadas
->>>>>>> 491bb89f32feee3f748be915a9a271b21024d02b
 
 - HTML5
 - CSS3
 - JavaScript (Vanilla)
-<<<<<<< HEAD
-- localStorage
-- Git
-- GitHub
-=======
 
 ## Funcionalidades
 
@@ -88,7 +89,13 @@ Este projeto tem como objetivo demonstrar conhecimentos fundamentais de front-en
 - Expandir o catálogo de looks
 - Tornar o layout totalmente responsivo
 - Implementar filtros adicionais de estilo
->>>>>>> 491bb89f32feee3f748be915a9a271b21024d02b
+
+---
+
+Desenvolvido como projeto de estudo em Análise e Desenvolvimento de Sistemas.
+- localStorage
+- Git
+- GitHub
 
 ---
 
