@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Fashion Assistant</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <div class="app">
+
+    <header>
+      <div class="header-top">
+        <h1>Fashion Assistant</h1>
+        <button id="toggleTheme">Dark mode</button>
+      </div>
+      <p>Assistente inteligente de estilo pessoal</p>
+    </header>
+
+    <section class="form-card">
+
+      <div class="grid">
+        <div class="field">
+          <label>Ocasião</label>
+          <select id="occasion">
+            <option value="">Selecione</option>
+            <option>Trabalho</option>
+            <option>Festa</option>
+            <option>Casual</option>
+            <option>Encontro</option>
+            <option>Evento formal</option>
+          </select>
+        </div>
+
+        <div class="field">
+          <label>Clima</label>
+          <select id="weather">
+            <option value="">Selecione</option>
+            <option>Frio</option>
+            <option>Calor</option>
+            <option>Ameno</option>
+            <option>Chuvoso</option>
+          </select>
+        </div>
+
+        <div class="field">
+          <label>Local</label>
+          <select id="place">
+            <option value="">Selecione</option>
+            <option>Trabalho</option>
+            <option>Escola</option>
+            <option>Shopping</option>
+            <option>Praia</option>
+            <option>Restaurante</option>
+          </select>
+        </div>
+
+        <div class="field">
+          <label>Tipo de corpo</label>
+          <select id="bodyType">
+            <option value="">Selecione</option>
+            <option>Ampulheta</option>
+            <option>Retangular</option>
+            <option>Pera</option>
+            <option>Oval</option>
+            <option>Triângulo invertido</option>
+          </select>
+        </div>
+
+        <div class="field">
+          <label>Estilo</label>
+          <select id="style">
+            <option value="">Selecione</option>
+            <option>Y2K</option>
+            <option>Quiet luxury</option>
+            <option>Streetwear</option>
+            <option>Cottagecore</option>
+            <option>Coquette / Balletcore</option>
+            <option>Glam maximalista</option>
+          </select>
+        </div>
+      </div>
+
+      <button id="generate">Gerar sugestão</button>
+
+    </section>
+
+    <section class="result-card">
+      <h2 class="title-primary">Look sugerido</h2>
+      <div id="result"></div>
+    </section>
+
+    <section class="history-card">
+      <h2 class="title-secondary">Histórico de sugestões</h2>
+
+      <!-- BOTÃO ADICIONADO -->
+      <button id="clearHistory" style="margin-bottom:12px; padding:8px 12px; border-radius:10px; border:1px solid var(--border); background:transparent; color:var(--text); cursor:pointer;">
+        Limpar histórico
+      </button>
+
+      <div id="history" class="history-grid"></div>
+    </section>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

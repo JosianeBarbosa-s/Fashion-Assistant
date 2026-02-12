@@ -1,0 +1,156 @@
+:root {
+  --bg: #f6f7fb;
+  --card: #ffffff;
+  --text: #1f1f1f;
+  --muted: #6b6b6b;
+  --primary: #c06c84;
+  --secondary: #6c5b7b;
+  --border: #e0e0e0;
+}
+
+body.dark {
+  --bg: #0f0f14;
+  --card: #171721;
+  --text: #f1f1f1;
+  --muted: #a0a0a0;
+  --primary: #ff8fab;
+  --secondary: #a18cd1;
+  --border: #2a2a35;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
+}
+
+body {
+  background: var(--bg);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  padding: 30px;
+  transition: 0.3s;
+}
+
+.app {
+  width: 100%;
+  max-width: 900px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+/* Header */
+header {
+  text-align: center;
+}
+
+.header-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header h1 {
+  font-size: 28px;
+  color: var(--primary);
+}
+
+header p {
+  color: var(--muted);
+  font-size: 14px;
+}
+
+#toggleTheme {
+  background: transparent;
+  border: 1px solid var(--border);
+  padding: 8px 14px;
+  border-radius: 10px;
+  color: var(--text);
+  cursor: pointer;
+}
+
+/* Cards */
+.form-card,
+.result-card,
+.history-card {
+  background: var(--card);
+  padding: 20px;
+  border-radius: 18px;
+  border: 1px solid var(--border);
+}
+
+/* Titles */
+.title-primary {
+  color: var(--primary);
+  margin-bottom: 10px;
+}
+
+.title-secondary {
+  color: var(--secondary);
+  margin-bottom: 10px;
+}
+
+/* Grid */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  font-size: 12px;
+  color: var(--muted);
+  margin-bottom: 4px;
+}
+
+select {
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid var(--border);
+  background: transparent;
+  color: var(--text);
+}
+
+/* Button */
+button#generate {
+  margin-top: 16px;
+  padding: 14px;
+  border: none;
+  border-radius: 14px;
+  background: linear-gradient(135deg, var(--primary), var(--secondary));
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+/* Result */
+#result {
+  background: rgba(0,0,0,0.03);
+  padding: 14px;
+  border-radius: 12px;
+  color: var(--text);
+}
+
+/* History */
+.history-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 12px;
+}
+
+.history-item {
+  background: rgba(0,0,0,0.04);
+  padding: 12px;
+  border-radius: 12px;
+  font-size: 13px;
+  color: var(--text);
+  border: 1px solid var(--border);
+}
