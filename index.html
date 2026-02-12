@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
+<<<<<<< HEAD
   <meta charset="UTF-8">
   <title>Fashion Assistant</title>
   <link rel="stylesheet" href="style.css">
@@ -105,5 +106,81 @@
   </div>
 
   <script src="script.js"></script>
+=======
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fashion Assistant 👗</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="script.js" defer></script>
+</head>
+<body>
+
+  <header>
+    <h1>Fashion Assistant 👗</h1>
+    <p>Looks personalizados com base no seu estilo</p>
+  </header>
+
+  <main class="container">
+
+    <form id="fashion-form">
+
+      <label>Ocasião</label>
+      <select id="occasion" required>
+        <option value="">Selecione</option>
+        <option value="trabalho">Trabalho</option>
+        <option value="festa">Festa</option>
+        <option value="casual">Casual</option>
+      </select>
+
+      <label>Temperatura</label>
+      <select id="temperature" required>
+        <option value="">Selecione</option>
+        <option value="frio">Frio</option>
+        <option value="ameno">Ameno</option>
+        <option value="quente">Quente</option>
+      </select>
+
+      <label>Local</label>
+      <select id="location" required>
+        <option value="">Selecione</option>
+        <option value="interno">Interno</option>
+        <option value="externo">Externo</option>
+      </select>
+
+      <label>Tipo de corpo</label>
+      <select id="bodyType" required>
+        <option value="">Selecione</option>
+        <option value="ampulheta">Ampulheta</option>
+        <option value="retangular">Retangular</option>
+        <option value="triangulo">Triângulo</option>
+        <option value="oval">Oval</option>
+      </select>
+
+      <label>Estilo</label>
+      <select id="style" required>
+        <option value="">Selecione</option>
+        <option value="y2k">Y2K</option>
+        <option value="quiet">Quiet Luxury</option>
+        <option value="streetwear">Streetwear</option>
+        <option value="cottagecore">Cottagecore</option>
+        <option value="coquette">Coquette / Balletcore</option>
+        <option value="glam">Glam Maximalista</option>
+      </select>
+
+      <button type="submit">Encontrar Look</button>
+    </form>
+
+    <div id="result" class="result">
+      Seu look aparecerá aqui 👇
+    </div>
+
+    <section class="history">
+      <h3>Últimos looks sugeridos</h3>
+      <ul id="history-list"></ul>
+    </section>
+
+  </main>
+
+>>>>>>> 542b9b6e3bfdf4062d4887adfa194dc04217ec29
 </body>
 </html>
