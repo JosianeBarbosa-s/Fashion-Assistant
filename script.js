@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 const occasion = document.getElementById("occasion");
 const weather = document.getElementById("weather");
 const place = document.getElementById("place");
@@ -47,7 +47,8 @@ Composição equilibrada entre estética, conforto e identidade visual do estilo
   history.unshift(lookData);
   if (history.length > 6) history.pop();
 
-=======
+
+
 const form = document.getElementById("fashion-form");
 const result = document.getElementById("result");
 const historyList = document.getElementById("history-list");
@@ -101,12 +102,12 @@ function loadPreferences() {
 function saveHistory(item) {
   history.unshift(item);
   history = history.slice(0, 5);
->>>>>>> 542b9b6e3bfdf4062d4887adfa194dc04217ec29
+
   localStorage.setItem("lookHistory", JSON.stringify(history));
   renderHistory();
 }
 
-<<<<<<< HEAD
+
 /* Render history */
 function renderHistory() {
   historyDiv.innerHTML = "";
@@ -127,7 +128,8 @@ clearHistoryBtn.addEventListener("click", () => {
 });
 
 generateBtn.addEventListener("click", generateLook);
-=======
+
+
 function renderHistory() {
   historyList.innerHTML = "";
 
@@ -169,5 +171,8 @@ form.addEventListener("submit", (e) => {
 });
 
 loadPreferences();
->>>>>>> 542b9b6e3bfdf4062d4887adfa194dc04217ec29
+
+
 renderHistory();
+
+}

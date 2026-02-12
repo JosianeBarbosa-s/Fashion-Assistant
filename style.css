@@ -1,4 +1,5 @@
-<<<<<<< HEAD
+
+
 :root {
   --bg: #f6f7fb;
   --card: #ffffff;
@@ -154,13 +155,13 @@ button#generate {
   font-size: 13px;
   color: var(--text);
   border: 1px solid var(--border);
-=======
+
 * {
   box-sizing: border-box;
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-}
+}}
 
 body {
   background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
@@ -245,5 +246,5 @@ button:hover {
   border-radius: 8px;
   margin-bottom: 8px;
   font-size: 14px;
->>>>>>> 542b9b6e3bfdf4062d4887adfa194dc04217ec29
+  
 }
